@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Ticket Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Book a Train Ticket</h1>
+        <form method="get" action="TrainTicket">
+            <div class="form-group">
+                <label for="fromCity">From City :</label>
+                <input type="text" id="fromCity" name="source_city" required>
+            </div>
+            <div class="form-group">
+                <label for="toCity">To City  :</label>
+                <input type="text" id="toCity" name="destination_city" required>
+            </div>
+            <div class="form-group">
+                <label for="departureDate">Departure Date:</label>
+                <input type="date" id="departureDate" name="departure_date" required>
+            </div>
+            <div class="form-group">
+                <label for="returnDate">Return Date:</label>
+                <input type="date" id="returnDate" name="arrival_date">
+            </div>
+            <div class="form-group">
+                <label for="seatClass">Seat Class:</label>
+                <select id="seatClass" name="seatClass" required>
+                    <option value="1A">1A - First AC</option>
+                    <option value="2A">2A - Second AC</option>
+                    <option value="3A">3A - Third AC</option>
+                    <option value="1NA">1NA - First NON-AC</option>
+                    <option value="2NA">2NA - Second NON-AC</option>
+                    <option value="3NA">3NA - Third NON-AC</option>
+                    <option value="CC">CC - Chair Car</option>
+                    <option value="SL">SL - Sleeper Class</option>
+                </select>
+            </div>
+            <button type="submit">Book Now</button>
+        </form>
+    </div>
+</body>
+</html>

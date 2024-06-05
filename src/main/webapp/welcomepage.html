@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>login successful</h1>
+
+<script>
+function login(LoginFile)
+{
+	if(LoginFile.username.value && LoginFile.password.value)
+	{
+		var username=document.getElementById("username").value;
+		document.write('<html><body><h1>');
+		document.write("welcome"+" ");
+		document.write(username);
+		document.write('</h1></body></html>');
+	}
+	else
+	{
+		alert("please enter the information"); 
+	}
+}
+</script>
+
+</body>
+</html>
